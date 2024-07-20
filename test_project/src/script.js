@@ -171,3 +171,4 @@ this is a third line`)
 
 
 console.log("This is the last line in this script")
+console.log("This is the last line in this script")
