@@ -8,7 +8,32 @@
 <body>
     <h1>ES6 Variables</h1>
 
-    <script src="./assets/main.js"></script>
+    <script src="assets/scripts/app.js" type="module"></script>
+    <!-- defer keyword is used to execute all of the html before 
+    executing the js file. Another way to do this is place the 
+    script at the end of the body tag
+
+    Adding type="module" within the script tag, considers the js 
+    files as modules. thus we can import and export functions.
+
+    *****
+    In a React project we almost never add a script in the html file.
+    Because react project almost always use a build process, which as 
+    a part of the build process injects these script tags into the html
+    code for us.
+    
+    React project uses a build process. Which means,
+    The code you write is not the code that gets executed in the browser.
+    Our code is transformed before its handed off to the browser.
+
+    reasons react use a build process
+    1. raw unprocessed react code wont execute in the browser
+    because react code uses jsx feature.
+
+
+
+
+-->
     
 </body>
 </html>
