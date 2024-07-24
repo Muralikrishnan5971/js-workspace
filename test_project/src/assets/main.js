@@ -111,3 +111,5 @@ const extendedUser = {
 };
 
 console.log(extendedUser);
+
+const passwd = prompt("Please enter your password....!");
