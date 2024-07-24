@@ -52,3 +52,14 @@ function init() {
 }
 
 init();
+
+/* Primitive vlaues in js are Immutable
+example - strings, numbers and boolean
+
+
+*/
+
+let userName = "muralikrishnan"; // this is a seperate value in memory
+userName = userName.concat(" g"); // thsi is a seperate vlaue in memory
+
+// This is not the case in objects and arrays (as arrays are also objects)
