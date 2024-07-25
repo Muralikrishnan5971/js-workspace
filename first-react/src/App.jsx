@@ -1,4 +1,5 @@
 import reactImg from "./assets/react1.png";
+import componentImg from "./assets/react-core-concepts.png";
 
 const filler = ["Core", " Fundamental", "Crucial"];
 
@@ -29,11 +30,45 @@ function HeaderTwo() {
   );
 }
 
+function CoreConcepts(props) {
+  return (
+    <li>
+      <img src={props.img} alt="..." />
+      <h3>{props.title}</h3>
+      <p>{props.description}</p>
+    </li>
+  );
+}
+
 function App() {
   return (
     <div>
       <Header></Header>
       <HeaderTwo></HeaderTwo>
+      <section id="core-concepts"></section>
+      <h2>Core Concepts</h2>
+      <ul>
+        <CoreConcepts
+          title="Components"
+          description="The core UI building block."
+          img={componentImg}
+        />
+        <CoreConcepts
+          title="Components"
+          description="The core UI building block."
+          img={componentImg}
+        />
+        <CoreConcepts
+          title="Components"
+          description="The core UI building block."
+          img={componentImg}
+        />
+        <CoreConcepts
+          title="Components"
+          description="The core UI building block."
+          img={componentImg}
+        />
+      </ul>
     </div>
   );
 }
