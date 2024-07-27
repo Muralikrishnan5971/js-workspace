@@ -1,5 +1,5 @@
-import reactImg from "./assets/react1.png";
-import componentImg from "./assets/component-1.png";
+import reactImg from "./assets/react-core-concepts.png";
+// import componentImg from "./assets/component-1.png";
 import { CORE_CONCEPTS } from "./data";
 
 const filler = ["Core", " Fundamental", "Crucial"];
@@ -54,11 +54,7 @@ function App() {
           description={CORE_CONCEPTS[0].description}
           img={CORE_CONCEPTS[0].image}
         />
-        <CoreConcepts
-          title={CORE_CONCEPTS[1].title}
-          description={CORE_CONCEPTS[1].description}
-          img={CORE_CONCEPTS[1].image}
-        />
+        <CoreConcepts {...CORE_CONCEPTS} />
         <CoreConcepts
           title={CORE_CONCEPTS[2].title}
           description={CORE_CONCEPTS[2].description}
